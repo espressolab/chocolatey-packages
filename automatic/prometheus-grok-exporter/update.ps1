@@ -4,6 +4,8 @@ import-module au
 $ProgressPreference = 'SilentlyContinue'
 $releases = 'https://github.com/fstab/grok_exporter/releases'
 
+$global:au_ChecksumFor = '64'
+
 function global:au_SearchReplace {
     @{
         'tools\chocolateyInstall.ps1' = @{
@@ -16,7 +18,6 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $webResponse = Invoke-WebRequest -Uri $releases -UseBasicParsing
     
-    #tidy-5.1.25-win64.zip
     #grok_exporter-0.2.8.windows-amd64.zip
     $re  = 'grok_exporter-.+\.windows-amd64.zip'
     $url = $webResponse.links | Where-Object href -match $re | Select-Object -First 1 -expand href
