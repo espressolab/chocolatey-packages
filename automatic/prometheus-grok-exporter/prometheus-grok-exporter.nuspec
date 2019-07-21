@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>prometheus-grok-exporter</id>
+    <version>0.2.8</version>
+    <packageSourceUrl>https://github.com/espressolab/chocolatey-packages/tree/master/automatic/prometheus-grok-exporter</packageSourceUrl>
+    <owners>Espresso Lab</owners>
+    <title>Prometheus Grok exporter</title>
+    <authors>Fabian Stäber</authors>
+    <projectUrl>https://github.com/fstab/grok_exporter</projectUrl>
+    <iconUrl>https://chocolatey.org/content/packageimages/prometheus.2.0.0.png</iconUrl>
+    <licenseUrl>https://github.com/fstab/grok_exporter/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://github.com/fstab/grok_exporter/blob/master/README.md</docsUrl>
+    <tags>prometheus-grok-exporter prometheus grok monitoring</tags>
+    <summary>Export Prometheus metrics from arbitrary unstructured log data</summary>
+    <description>
+### About Grok
+[Grok] is a tool to parse crappy unstructured log data into something structured and queryable. Grok is heavily used in [Logstash] to provide log data as input for [ElasticSearch].    
+    </description>
+    <releaseNotes>https://github.com/fstab/grok_exporter/releases/tag/v0.2.8</releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
