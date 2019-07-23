@@ -20,9 +20,6 @@
 Grok ships with about 120 predefined patterns for syslog logs, apache and other webserver logs, mysql logs, etc. It is easy to extend Grok with custom patterns.
 The `grok_exporter` aims at porting Grok from the [ELK stack] to [Prometheus] monitoring. The goal is to use Grok patterns for extracting Prometheus metrics from arbitrary log files.    </description>
     <releaseNotes>https://github.com/fstab/grok_exporter/releases</releaseNotes>
-    <dependencies>
-      <dependency id="chocolatey-core.extension" version="1.1.0" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
