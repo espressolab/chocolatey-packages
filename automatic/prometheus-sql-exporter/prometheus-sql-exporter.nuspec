@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as pr eek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>prometheus-sql-exporter</id>
+    <version>0.5</version>
+    <packageSourceUrl>https://github.com/espressolab/chocolatey-packages/tree/master/automatic/prometheus-sql-exporter</packageSourceUrl>
+    <owners>Espresso Lab</owners>
+    <title>Prometheus Sql exporter</title>
+    <authors>Alin Sinpalean</authors>
+    <projectUrl>https://github.com/free/sql_exporter</projectUrl>
+    <iconUrl>https://cdn.statically.io/img/upload.wikimedia.org/wikipedia/en/thumb/3/38/Prometheus_software_logo.svg/220px-Prometheus_software_logo.svg.png</iconUrl>
+    <licenseUrl>https://github.com/free/sql_exporter/blob/master/LICENSE</licenseUrl>
+    <bugTrackerUrl>https://github.com/free/sql_exporter/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://github.com/free/sql_exporter/blob/master/README.md</docsUrl>
+    <tags>prometheus-sql-exporter prometheus sql monitoring</tags>
+    <summary>Database agnostic SQL exporter for Prometheus.</summary>
+    <description>
+    SQL Exporter is a configuration driven exporter that exposes metrics gathered from DBMSs, for use by the Prometheus monitoring system.
+    The collected metrics and the queries that produce them are entirely configuration defined.
+    </description>
+    <releaseNotes>https://github.com/free/sql_exporter/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
